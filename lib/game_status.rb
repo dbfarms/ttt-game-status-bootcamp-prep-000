@@ -36,9 +36,9 @@ def won?(board)
       i += 1
       end
      if win_array[0] == "X" && win_array[1] == "X" && win_array[2] == "X"
-       return win_array
+       return win_index 
      elsif win_array[0] == "O" && win_array[1] == "O" && win_array[2] == "O"
-       return win_array
+       return win_index 
      else
        status = false
      end
