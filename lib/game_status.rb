@@ -21,7 +21,7 @@ def won?(board)
     win_index.each do
       i = 0
       while i < 3
-        if board[i] == win_index[i]
+        if board[win_index[i]] == win_index[i]
           status = true
         else
           status = false
