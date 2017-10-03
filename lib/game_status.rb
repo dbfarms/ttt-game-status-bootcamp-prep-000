@@ -18,11 +18,12 @@ WIN_COMBINATIONS = [
 def won?(board)
 
   WIN_COMBINATIONS.each | win_index |
-    win_index.each do 
+    win_index.each do
       i = 0
       while i <= 3
         if board[i] == win_index[i]
-      end 
+          i += 1
+      end
     end
   end
 
