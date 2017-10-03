@@ -30,6 +30,7 @@ def won?(board)
           puts "i got here #{board[win_index[i]]}"
         else
           puts "or else i got here"
+          status = false
         end
       i += 1
       end
