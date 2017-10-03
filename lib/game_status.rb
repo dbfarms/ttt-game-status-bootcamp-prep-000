@@ -20,12 +20,13 @@ def won?(board)
   WIN_COMBINATIONS.each do | win_index |
     win_index.each do
       i = 0
-      while i <= 3
+      while i < 3
         if board[i] == win_index[i]
           status = true
         else
           status = false
         end
+      i += 1
       end
     end
   end
