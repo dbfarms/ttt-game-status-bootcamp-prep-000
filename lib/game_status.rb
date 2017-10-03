@@ -22,7 +22,9 @@ def won?(board)
       i = 0
       while i <= 3
         if board[i] == win_index[i]
-          i += 1
+          status = true
+        else
+          status = false
         end
       end
     end
