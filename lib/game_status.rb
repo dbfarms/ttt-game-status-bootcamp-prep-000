@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
 
-  WIN_COMBINATIONS.each | win_index |
+  WIN_COMBINATIONS.each do | win_index |
     win_index.each do
       i = 0
       while i <= 3
