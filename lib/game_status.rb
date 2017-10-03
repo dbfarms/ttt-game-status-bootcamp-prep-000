@@ -26,13 +26,17 @@ def won?(board)
         puts win_index[i]
 
         if board[win_index[i]] != nil || " "
-          win_array.push(win_index[i])
+          win_array.push(board[win_index[i]])
           puts "i got here #{board[win_index[i]]}"
         else
           puts "or else i got here"
         end
       i += 1
       end
+     if win_array[0] == "X" && win_array[1] == "X" && win_array[2] == "X"
+       return win_array
+     elsif win_array[0] == "O" && win_array[1] == "O" && win_array[2] == "O"
+       return win_array
     end
   end
 
