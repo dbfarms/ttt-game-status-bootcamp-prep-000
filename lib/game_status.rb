@@ -23,6 +23,7 @@ def won?(board)
       while i <= 3
         if board[i] == win_index[i]
           i += 1
+        end
       end
     end
   end
