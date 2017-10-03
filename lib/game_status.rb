@@ -20,14 +20,15 @@ def won?(board)
   WIN_COMBINATIONS.each do | win_index |
     win_index.each do
       i = 0
+      win_array = []
       while i < 3
         puts board[win_index[i]]
         puts win_index[i]
+
         if board[win_index[i]] != nil || " "
-          status = true
-          puts "i got here"
+          win_array.push(win_index[i])
+          puts "i got here #{board[win_index[i]]}"
         else
-          status = false
           puts "or else i got here"
         end
       i += 1
