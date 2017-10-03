@@ -48,6 +48,8 @@ def won?(board)
 end
 
 def full?(board)
-  return board.detect{|i| i == nil}
-
+  if board.detect{|i| i == nil}
+    return false
+  else
+    return true
 end
