@@ -46,3 +46,7 @@ def won?(board)
   end
   return status
 end
+
+def full?(board)
+
+end
