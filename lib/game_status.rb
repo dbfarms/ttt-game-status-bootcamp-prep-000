@@ -80,9 +80,10 @@ end
 
 def winner(board)
   token_array = won?(board)
-  if token_array[0] == "X"
+
+  if board[token_array[0]] == "X"
     return "X"
-  elsif token_array[0] == "O"
+  elsif board[token_array[0]] == "O"
     return "O"
   else
     return nil
