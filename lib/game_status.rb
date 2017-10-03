@@ -16,6 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  status = false
 
   WIN_COMBINATIONS.each do | win_index |
     win_index.each do
