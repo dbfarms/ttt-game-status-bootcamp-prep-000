@@ -79,14 +79,17 @@ def over?(board)
 end
 
 def winner(board)
-  token_array = won?(board)
 
-  if board[token_array[0]] == "X"
-    return "X"
-  elsif board[token_array[0]] == "O"
-    return "O"
-  else
-    return nil
+  if won?(board) != false
+    token_array = won?(board)
+
+    if board[token_array[0]] == "X"
+      return "X"
+    elsif board[token_array[0]] == "O"
+      return "O"
+    end
+   return nil
+
   end
 
 end
