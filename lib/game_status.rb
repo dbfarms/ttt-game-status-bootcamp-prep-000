@@ -69,5 +69,9 @@ def draw?(board)
 end
 
 def over?(board)
-
+  if full?(board)
+    return true
+  else
+    return false
+  end
 end
