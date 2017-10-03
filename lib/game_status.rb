@@ -38,9 +38,9 @@ def won?(board)
      elsif win_array[0] == "O" && win_array[1] == "O" && win_array[2] == "O"
        return win_array
      else
-       status = false 
+       status = false
      end
     end
   end
-  return status 
+  return status
 end
