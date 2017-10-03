@@ -21,10 +21,14 @@ def won?(board)
     win_index.each do
       i = 0
       while i < 3
-        if board[win_index[i]] == win_index[i]
+        puts board[win_index[i]]
+        puts win_index[i]
+        if board[win_index[i]] != nil || " "
           status = true
+          puts "i got here"
         else
           status = false
+          puts "or else i got here"
         end
       i += 1
       end
